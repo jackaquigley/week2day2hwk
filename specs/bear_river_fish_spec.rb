@@ -17,4 +17,8 @@ end
     assert_equal("Thames", @river.name)
   end
 
+  def test_river_has_fish
+    assert_equal(4929, @river.fish)
+  end
+
 end
