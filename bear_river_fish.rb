@@ -22,7 +22,7 @@ end
 
 class Bear
 
-attr_reader :name, :type, :stomach
+attr_reader :name, :type, :fish
 
   def initialize(name, type, fish)
     @name = name
