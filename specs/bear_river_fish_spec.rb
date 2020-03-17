@@ -29,8 +29,20 @@ def setup
   @fish = Fish.new("Sam")
 end
 
-def test_fish_has_name
-  assert_equal("Sam", @fish.fish_name)
+  def test_fish_has_name
+    assert_equal("Sam", @fish.name)
+  end
+
 end
+
+class TestBear < MiniTest::Test
+
+def setup
+  @bear = Bear.new("Greg", "Panda", [])
+end
+
+ def test_bear_has_name
+   assert_equal("Greg", @bear.name)
+ end
 
 end

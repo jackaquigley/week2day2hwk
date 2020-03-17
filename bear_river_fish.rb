@@ -12,10 +12,22 @@ end
 
 class Fish
 
-attr_reader :fish_name
+attr_reader :name
 
-  def initialize(fish_name)
-    @fish_name = fish_name
+  def initialize(name)
+    @name = name
+  end
+
+end
+
+class Bear
+
+attr_reader :name, :type, :stomach
+
+  def initialize(name, type, fish)
+    @name = name
+    @type = type
+    @fish = []
   end
 
 end
