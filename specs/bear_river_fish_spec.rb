@@ -7,14 +7,14 @@ Minitest::Reporters::SpecReporter.new
 
 require_relative('../bear_river_fish.rb')
 
-class RiverTest < MiniTest::Test
+class TestRiver < MiniTest::Test
 
 def setup
  @river = River.new("Thames", 4929)
 end
 
  def test_river_has_name
-    assert_equal("Thames", River.name)
+    assert_equal("Thames", @river.name)
   end
 
 end
